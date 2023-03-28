@@ -1,0 +1,218 @@
+body {
+    background-color: whitesmoke;
+    display: block;
+} 
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*---------------------ENCABEZADO------------------------------------*/
+header {
+    background-image:linear-gradient(to right, black, whitesmoke);
+    border: transparent;
+    margin: transparent;
+    padding: transparent;
+
+}
+ul {
+    margin: 0;
+    display: flex ;
+    padding-left: 1000px;
+
+}
+ul li{
+    list-style: none;
+    margin: 0 20px;
+
+}
+ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-family: forum, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-align: center;
+    
+}
+
+ul:hover li .navmenu{
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+}
+ul li a.navmenu:hover{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+/*////////////////////HASTA AQUI LLEGA EL ENCABEZADO//////////////////////////*/
+
+@font-face {
+    font-family: Gagalin;
+    src: url("Fonts/Gagalin-Regular.otf") format("truetype");
+}
+
+.Logo, .menu-principal {
+padding: 15px;
+width: 100%;
+margin: auto;
+text-align: center;
+}
+
+.container{
+    text-align: right;
+    height: auto;
+}
+.container #img1{
+margin: auto;
+}
+
+#img1{
+    width: 30%;
+    border-radius: 30%;
+}
+
+div{
+    text-align: left;
+    height: auto;
+}
+
+div #img2{
+    margin: auto;
+    border-radius: 30%;
+}
+
+#img2 {
+    width: 40%;
+}
+
+
+p {
+    font-size: 1em;
+}
+
+
+
+
+/* ESTA SECCION SOLO COMPRENDE AL FOOTER*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+footer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons li {
+    margin: 0 10px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+    font-size: 20px;
+    z-index: 1;
+  }
+  
+  .social-icons a.facebook:hover {
+    background-color: #3b5998;
+    color:#fff /* color característico de facebook */
+  }
+  .social-icons a.twitter:hover {
+    background-color: #00acee;
+    color:#fff /* color característico de twitter */
+  }
+  .social-icons a.instagram:hover {
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) ;
+    color:#fff /* color característico de instagram */
+  }
+  .social-icons a.youtube:hover {
+    background-color: #c4302b;
+    color:#fff /* color característico de youtube */
+  }
+  .social-icons a.whatsapp:hover {
+    background-color: #25d366;
+    color:#fff /* color característico de whatsapp */
+  }
+  
+   .social-icons a::before{
+    content: attr(data-title);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+   } 
+  
+  .social-icons a:hover::before {
+    opacity: 1;
+  }
+  .social-icons a.facebook:hover::before {
+    background-color: #2d4373;
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+  }
+  .social-icons a.twitter:hover::before {
+    background-color: #00acee;
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+  }  .social-icons a.instagram:hover::before {
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+  }  .social-icons a.whatsapp:hover::before {
+    background-color: #25d366;
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+  }
+  .social-icons a.youtube:hover::before {
+    background-color: #c4302b;
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  H6{
+    font-family: arial;
+    font-size: 10px;
+  }
+  /*//////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*////////////////////AQUI TERMINA EL FOOTER///////////////////////////////////////////////////*/
