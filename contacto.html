@@ -2,49 +2,105 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <title>6 Strings</title>
-
-    </head>
+    
+      </head>
     <body>
 
-        <script src="js/all.min.js"></script>
-        <header>
-            <ul>
-                <li><a href="index.html" class="navmenu">Home</a></li>
-                <li><a href="nosotros.html" class="navmenu">Nosotros</a></li>
-                <li><a href="productos.html" class="navmenu">Productos</a></li>
-                <li><a href="contacto.html" class="navmenu">Contáctanos</a></li>
-                
-            </ul>
-                  
-        </header>
-        
-            <div class="logo"><img id="logo" src="Images/6 Strings.png" alt="Logo de la marca" width="300px"></div>
-        
+    <!--Encabezado para anuncios-->
+    <div class="section advises">
+        <div class="text-block"><b>ENVÍO GRATIS POR COMPRAS MAYORES A S/99 CON EL CÓDIGO STR99,
+          VÁLIDO PARA LIMA METROPOLITANA - DE 2 A 3 DÍAS HÁBILES</b></div>
+    </div>
+
+    
+    <!--Barra de navegación-->
+    <div class="nav-bar">
+        <div class="container">
+          <!--Logo-->
+          <div class="nav-brand">
+            <a href="index.html"><img id="brand-logo" src="images/6 Strings logo.png" width="270" alt="Brand logo"></a>
+          </div>
+          <!--Menu de navegacion-->
+          <nav>
+              <ul>
+                <li>
+                  <a href="index.html"><strong>Inicio</strong></a>
+                </li>
+                <li>
+                  <a href="nosotros.html"><strong>Nosotros</strong></a>
+                </li>
+                <li>
+                  <a href="contacto.html"><strong>Contácto</strong></a>
+                </li>
+                <li>
+                  <a href="productos.html"><strong>Productos</strong></a>
+                </li>
+              </ul>
+          </nav>
+          <!--Botón carrito de compras-->
+          <button id="button-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <p id="Cart">Cart</p>
+          </button>
+        </div>
+      </div>
+      
+        <!--Contacto-->
+        <div class="contact">
+            <div class="contact-form" style="width: 300px;">
+                <span class="heading">Contáctanos</span>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" required="">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required=""></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+          
+
+
+
+        <!--Footer-->
             
         <footer>
-            <div><h4>Follow us:</h4></div>
-            <ul class="social-icons">
-                <li><a href="https://www.facebook.com" class="facebook" data-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.twitter.com" class="twitter" data-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com" class="instagram" data-title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.whatsapp.com" class="whatsapp" data-title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                <li><a href="https://www.youtube.com" class="youtube" data-title="Youtube"><i class="fab fa-youtube"></i></a></li>
-
-                </ul>
-                <div><h6> ® Copyright 6 Strings. 2023 All rights reserved.</h6></div>
+            <div class="footer container">
+                <div class="stores">
+                    <span class="ourstores">
+                        <strong>Nuestras tiendas</strong>
+                    </span>
+                    <ul>
+                        <li>Av. Santiago de Surco N°4717 - Surco</li>
+                        <li>Av. Industrial N° 3733 - Independencia</li>
+                    </ul>
+                </div>
+                <div class="suscribe">
+                    <div class="card">
+                        <span class="card__title">Subscribe</span>
+                        <p class="card__content">Get fresh web design resources delivered straight to your inbox every week.
+                        </p>
+                        <div class="card__form">
+                          <input placeholder="Your Email" type="text">
+                          <button class="sign-up"> Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="additional information">
+                <span>© 2023 "6 Strings" Music Store</span>
+            </div>
         </footer>
-              
-        
-        
-
-
-        
-
+                  
         
     </body>
 </html>

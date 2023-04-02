@@ -1,218 +1,346 @@
-body {
-    background-color: whitesmoke;
-    display: block;
-} 
+.body {
+  margin: 0;
+}
 
-div {
+/*Encabezado para anuncios*/
+div.section.advises{
+  background-color: black;
+  color: black;
+  margin: 0;
+  align-items: center ;
+} 
+.text-block{
+  background-color: black;
+  color: #e0e0e0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+   'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+ } 
+
+ /*BARRA DE NAVEGACIÓN*/
+
+.nav-bar {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#brand-logo {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
+.container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+div div nav ul {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div div nav ul li{
+  list-style: none ;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  padding-right: 30px;
+  padding-left: 30px;
+ }
+
+.nav-bar.nav-brand {
   display: flex;
+  align-content: center ;
+
+}
+
+ div ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+ }
+
+ /*BOTON CARRITO DE COMPRAS*/
+ #button-cart {
+  border-radius: 25PX;
+  padding: 0px 20px 0px 20px;
+  margin: 4px 2px;
+  font-size: 100%;
+  background-color: black;
+  color: whitesmoke;
+  display: inline-flex;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+  align-items: center ;
+  justify-content: space-between;
+ }
+
+ .fas {
+  padding-right: 10px;
+ }
+
+/* Estilos para el slider */
+.slider {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 58px;
+  background: #e0e0e0;
+  box-shadow:  41px -41px 82px #cccccc, -41px 41px 82px #f4f4f4;
+}
+
+.slider .slider-contenedor{
+  width: 200%;
+  background-color: rgba(22, 21, 21, 0.089);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+
+.slider .img-slider {
+  width: calc(100%/2);
+  min-height: 10vh;
+
+}
+
+.slider .dots {
+  width: 100%;
+  padding: .4em;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
 
-
-/*---------------------ENCABEZADO------------------------------------*/
-header {
-    background-image:linear-gradient(to right, black, whitesmoke);
-    border: transparent;
-    margin: transparent;
-    padding: transparent;
-
-}
-ul {
-    margin: 0;
-    display: flex ;
-    padding-left: 1000px;
-
-}
-ul li{
-    list-style: none;
-    margin: 0 20px;
-
-}
-ul li a{
-    display: block;
-    position: relative;
-    text-decoration: none;
-    padding: 5px;
-    font-size: 18px;
-    font-family: forum, sans-serif;
-    color: #000;
-    text-transform: uppercase;
-    transition: 0.5s;
-    text-align: center;
-    
+.slider .dot {
+  width: 2em;
+  height: 2em;
+  margin: 0 1em 0 1em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 150px;
+  background: #ededed;
+  box-shadow:  19px 19px 39px #686868, 
+  -19px -19px 39px #ffffff;
+  outline: none;
 }
 
-ul:hover li .navmenu{
-    transform: scale(1.5);
-    opacity: 0.2;
-    filter: blur(5px);
-}
-ul li a.navmenu:hover{
-    transform: scale(2);
-    opacity: 1;
-    filter: blur(0);
+.slider .dot.active {
+  background-color: rgb(3, 1, 1);
 }
 
-/*////////////////////HASTA AQUI LLEGA EL ENCABEZADO//////////////////////////*/
+/*////////------Destacados----------/////*/
+.enunciado {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  padding-left: 15px;
+  padding-top: 20px;
 
-@font-face {
-    font-family: Gagalin;
-    src: url("Fonts/Gagalin-Regular.otf") format("truetype");
 }
 
-.Logo, .menu-principal {
-padding: 15px;
-width: 100%;
-margin: auto;
-text-align: center;
+/*////////-------Footer-------////////////*/
+footer {
+  display: block;
 }
 
-.container{
-    text-align: right;
-    height: auto;
-}
-.container #img1{
-margin: auto;
+.footer {
+padding-left: 100px;
+padding-right: 100px;
 }
 
-#img1{
-    width: 30%;
-    border-radius: 30%;
+/*---------Footer->-Stores-----------*/
+.ourstores {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
-div{
-    text-align: left;
-    height: auto;
+.stores ul li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-div #img2{
-    margin: auto;
-    border-radius: 30%;
+/*---------Footer->-Suscribe---------*/
+.card {
+  width: 240px;
+  height: 254px;
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border-radius: 20px;
 }
 
-#img2 {
-    width: 40%;
+.card > * {
+  margin: 0;
+}
+
+.card__title {
+  font-size: 23px;
+  font-weight: 900;
+  color: #333;
+}
+
+.card__content {
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__form input {
+  margin-top: 10px;
+  outline: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  padding: 0.6em;
+  border-radius: 14px;
+  border: 1px solid #333;
+  color: black;
+}
+
+.card__form button {
+  border: 0;
+  background: #111;
+  color: #fff;
+  padding: 0.68em;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+.sign-up:hover {
+  opacity: 0.8;
+} 
+
+/*---------Footer->-Additional-------*/
+.additional {
+  text-align: center;
+  font-size: 12px;
 }
 
 
-p {
-    font-size: 1em;
+
+
+/*-------------------------------------producto.html-----------------------------*/
+
+
+.product-item {
+  position: relative;
+  padding: 20px;
+  min-width: 0;
+  flex-shrink: 0;
+  white-space: normal;
+
+}
+
+.product-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+
+.product-item-vendor {
+margin: 10px;
+}
+
+.price {
+  color: #00badb;
+  font-family: sans-serif;
+  margin: 10px;
 }
 
 
 
+/*-------------------------------------contacto.html-----------------------------*/
 
-/* ESTA SECCION SOLO COMPRENDE AL FOOTER*/
-/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-footer{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    place-items: center;
-    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+.contact {
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
+.contact-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  display: block;
+}
 
-  .social-icons li {
-    margin: 0 10px;
-  }
+.contact-form label {
+  color: black;
+}
 
-  .social-icons a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    text-align: center;
-    line-height: 50px;
-    color: #000;
-    position: relative;
-    transition: background-color 0.2s ease-out;
-    font-size: 20px;
-    z-index: 1;
-  }
-  
-  .social-icons a.facebook:hover {
-    background-color: #3b5998;
-    color:#fff /* color característico de facebook */
-  }
-  .social-icons a.twitter:hover {
-    background-color: #00acee;
-    color:#fff /* color característico de twitter */
-  }
-  .social-icons a.instagram:hover {
-    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) ;
-    color:#fff /* color característico de instagram */
-  }
-  .social-icons a.youtube:hover {
-    background-color: #c4302b;
-    color:#fff /* color característico de youtube */
-  }
-  .social-icons a.whatsapp:hover {
-    background-color: #25d366;
-    color:#fff /* color característico de whatsapp */
-  }
-  
-   .social-icons a::before{
-    content: attr(data-title);
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 0px 10px 0px 10px;
-    border-radius: 20px;
-    position: absolute;
-    top: -20%;
-    left: 50%;
-    transform: translate(-50%,-100%);
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-   } 
-  
-  .social-icons a:hover::before {
-    opacity: 1;
-  }
-  .social-icons a.facebook:hover::before {
-    background-color: #2d4373;
-    color: #fff;
-    opacity: 1;
-    visibility: visible;
-  }
-  .social-icons a.twitter:hover::before {
-    background-color: #00acee;
-    color: #fff;
-    opacity: 1;
-    visibility: visible;
-  }  .social-icons a.instagram:hover::before {
-    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-    color: #fff;
-    opacity: 1;
-    visibility: visible;
-  }  .social-icons a.whatsapp:hover::before {
-    background-color: #25d366;
-    color: #fff;
-    opacity: 1;
-    visibility: visible;
-  }
-  .social-icons a.youtube:hover::before {
-    background-color: #c4302b;
-    color: #fff;
-    opacity: 1;
-    visibility: visible;
-  }
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  ;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
 
-  H6{
-    font-family: arial;
-    font-size: 10px;
-  }
-  /*//////////////////////////////////////////////////////////////////////////////////////////////*/
-  /*////////////////////AQUI TERMINA EL FOOTER///////////////////////////////////////////////////*/
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #405ace;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #2d30cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
